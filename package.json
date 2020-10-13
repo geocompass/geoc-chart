@@ -1,0 +1,42 @@
+{
+  "name": "geoc-chart",
+  "version": "0.1.0",
+  "description": "自定义封装G2、G2Plot、L7、Mapbox等自定义图表配置",
+  "author": "GeoCompass xtgceb ty",
+  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "chart",
+    "AntV",
+    "Mapbox"
+  ],
+  "homepage": "https://github.com/geocompass/geoc-chart",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geocompass/geoc-chart"
+  },
+  "bugs": {
+    "url": "https://github.com/geocompass/geoc-chart/issues"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib",
+    "build": "webpack --config build/webpack.config.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "eslint": "^7.11.0",
+    "eslint-loader": "^4.0.2",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  }
+}
