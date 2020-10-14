@@ -25,7 +25,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/*']
+    }),
     new CopyPlugin({
       patterns: [
         {
