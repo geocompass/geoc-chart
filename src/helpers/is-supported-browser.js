@@ -7,7 +7,7 @@ const isSupportedBrowser  = () => {
 
   // <IE8
   if (BrowserInfo.indexOf('msie') > -1) browserVersion = BrowserInfo.match(/msie ([\d.]+)/)[1]
-  if (browserVersion && browserVersion <= 8.0) return false
+  if (browserVersion && browserVersion <= 10.0) return false
 
   // mapbox supported
   if (!mapboxgl.supported()) return false

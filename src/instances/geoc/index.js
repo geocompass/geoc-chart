@@ -1,3 +1,4 @@
+// read /doc/GEOC.md
 import Text from './geoc-text'
 import MultilineText from './geoc-multilinetext'
 
@@ -6,15 +7,25 @@ class Geoc {
     this.options = options
     this.elements = elements
     this.chartType = chartType
-
-    this.render()
+    this._geocInstance = null
   }
 
+  instance (chartType) {
+    chartType === 'Text'
+      && (this._geocInstance = new Text(this.elements, this.options))
+    chartType === 'MultilineText'
+      && (this._geocInstance = new MultilineText(this.elements, this.options))
+  }
+
+  // 图表渲染
   render () {
-    // Geoc 单行文本
-    this.chartType === 'Text' && new Text(this.elements, this.options)
-    //  Geoc 多行文本
-    this.chartType === 'MultilineText' && new MultilineText(this.elements, this.options)
+    this.instance(this.chartType)
+    this._geocInstance.render()
+  }
+
+  // 图表销毁
+  destroy () {
+    this._geocInstance && this._geocInstance.destroy()
   }
 }
 
