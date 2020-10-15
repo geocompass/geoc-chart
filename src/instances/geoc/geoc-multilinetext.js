@@ -64,15 +64,14 @@ class MultilineText {
     const classMultilineTextPSpan = `geoc-multilinetext-important_text${now()}`
 
     // __解析$1 $2文本
-    let importantText = this.text
     this.field.forEach((item, index) => {
-      importantText = importantText.replace((`$${index + 1}`, `<span class=${classMultilineTextPSpan}>${this.meta.formatter(this.data[item])}</span>`))
+      this.text = this.text.replace((`$${index + 1}`, `<span class=${classMultilineTextPSpan}>${this.meta.formatter(this.data[item])}</span>`))
     })
 
     // __创建元素
     this._container.innerHTML = `
       <div class=${classMultilineText}>
-        <p class=${classMultilineTextP}>${importantText}</p>
+        <p class=${classMultilineTextP}>${this.text}</p>
       </div>
     `
     
