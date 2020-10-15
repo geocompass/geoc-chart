@@ -6,12 +6,15 @@ class G2Plot {
     this.chartType = chartType
     this.elements = elements
     this.options = options
-
-    this.exportG2Plot()
+    this._customG2plot = new g2plot[this.chartType](this.elements, this.options)
   }
 
-  exportG2Plot () {
-    return new g2plot[this.chartType](this.elements, this.options)
+  render () {
+    this._customG2plot.render()
+  }
+
+  destroy () {
+    this._customG2plot.destroy()
   }
 }
 
