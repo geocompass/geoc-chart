@@ -1,22 +1,20 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+// const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname,'../src/index.js'),
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname,'../lib')
+    path: path.resolve(__dirname,'../lib'),
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [
       {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: { presets: ['@babel/preset-env'] }
-        }
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       }
     ]
   },
@@ -24,13 +22,13 @@ module.exports = {
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/*']
     }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, '../src/static'),
-          to: path.resolve(__dirname, '../lib/static')
-        }
-      ]
-    })
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, '../src/instances/mapbox/static'),
+    //       to: path.resolve(__dirname, '../lib/static')
+    //     }
+    //   ]
+    // })
   ]
 }
