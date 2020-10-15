@@ -1,5 +1,5 @@
 // read /doc/MAPBOX.md
-import mapboxgl from './static/mapbox-gl'
+import mapboxgl from 'mapbox-gl'
 
 class Mapbox {
   constructor (elements, options) {
