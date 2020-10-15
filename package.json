@@ -21,7 +21,7 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint lib",
-    "test": "webpack --config build/webpack.config.js --mode development",
+    "dev": "webpack --config build/webpack.config.js --mode development",
     "build": "webpack --config build/webpack.config.js --mode production"
   },
   "dependencies": {

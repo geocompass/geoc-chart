@@ -1,3 +1,4 @@
     - fetch 总体封装一层
     - 当容器id为多个报错，id只能是唯一的?
     - 多次渲染会报Cannot read property 'style' of undefined (ResizeObserver.eval)
+    - 添加为mapbox 文件错误

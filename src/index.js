@@ -11,6 +11,6 @@ export { G2Plot } from './instances/g2plot'
 export { G2 } from './instances/g2'
 
 // Mapbox
-export { Mapbox } from './instances/mapbox'
+// export { Mapbox } from './instances/mapbox'
 
 // ...
