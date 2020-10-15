@@ -65,7 +65,7 @@ class MultilineText {
 
     // __解析$1 $2文本
     this.field.forEach((item, index) => {
-      this.text = this.text.replace((`$${index + 1}`, `<span class=${classMultilineTextPSpan}>${this.meta.formatter(this.data[item])}</span>`))
+      this.text = this.text.replace(`$${index + 1}`, `<span class=${classMultilineTextPSpan}>${this.meta.formatter(this.data[item])}</span>`)
     })
 
     // __创建元素
