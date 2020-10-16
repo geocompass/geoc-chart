@@ -22,7 +22,7 @@ class Geoc {
   // 图表渲染
   render () {
     this.instance(this.chartType)
-    this._geocInstance.render()
+    this._geocInstance
   }
 
   // 图表销毁
