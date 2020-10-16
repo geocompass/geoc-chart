@@ -51,18 +51,10 @@ const filedQuery = async params => {
   return result
 }
 
-// 地图style
-const mapTiles = async params => {
-  const url = `${baseUrl}/worktable/{z}/{x}/{y}.mvt?dataId=${params.workId}&column=geom&token=${params.token}`
-
-  return url
-}
-
 
 
 export {
   chartInfo,
   sqlQuery,
-  filedQuery,
-  mapTiles
+  filedQuery
 }

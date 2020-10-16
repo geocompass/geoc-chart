@@ -1,3 +1,4 @@
+// 状态码
 const statusCode = code => {
   const codes = {
     202: '202 Accepted',

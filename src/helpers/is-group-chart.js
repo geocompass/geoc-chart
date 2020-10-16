@@ -1,3 +1,5 @@
+// 获取chart所在组
+
 const groupChart = {
   'Geoc': [ 'Text', 'MultilineText' ],
   'Mapbox': [ 'Mapbox' ],
