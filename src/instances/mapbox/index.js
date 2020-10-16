@@ -3,16 +3,10 @@ import mapboxgl from 'mapbox-gl'
 
 class Mapbox {
   constructor (elements, options) {
-    const {
-      mapStyle,
-      mapCenter = [122.48356819152832, 37.832056363179625],
-      mapZoom = 4
-    } = options
-
-    this._style = mapStyle
-    this._center = mapCenter
-    this._zoom = mapZoom
+    this._style = options
     this.elements = elements
+
+    this.render()
   }
 
   // 图表渲染
@@ -20,8 +14,6 @@ class Mapbox {
     this._map = new mapboxgl.Map({
       container: this.elements,
       style: this._style,
-      center: this._center,
-      zoom: this._zoom
     })
   }
 

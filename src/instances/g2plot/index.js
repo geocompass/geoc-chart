@@ -7,6 +7,8 @@ class G2Plot {
     this.elements = elements
     this.options = options
     this._customG2plot = new g2plot[this.chartType](this.elements, this.options)
+    
+    this.render()
   }
 
   render () {

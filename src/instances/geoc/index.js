@@ -8,6 +8,8 @@ class Geoc {
     this.elements = elements
     this.chartType = chartType
     this._geocInstance = null
+
+    this.render()
   }
 
   instance (chartType) {
