@@ -1,6 +1,6 @@
 {
-  "name": "geoc-chart",
-  "version": "0.1.0",
+  "name": "gde",
+  "version": "1.0.0-alpha.1",
   "description": "自定义封装G2、G2Plot、L7、Mapbox等自定义图表配置",
   "author": "GeoCompass xtgceb ty",
   "license": "ISC",
@@ -18,9 +18,9 @@
   "bugs": {
     "url": "https://github.com/geocompass/geoc-chart/issues"
   },
-  "main": "lib/index.js",
+  "main": "lib/gde.min.js",
   "scripts": {
-    "lint": "eslint lib",
+    "lint": "eslint src/index.js",
     "dev": "webpack --config build/webpack.config.js --mode development",
     "build": "webpack --config build/webpack.config.js --mode production"
   },

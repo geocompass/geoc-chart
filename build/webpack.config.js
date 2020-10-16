@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   entry: path.resolve(__dirname,'../src/index.js'),
   output: {
-    filename: 'index.js',
+    filename: 'gde.min.js',
     path: path.resolve(__dirname,'../lib'),
     libraryTarget: 'commonjs2'
   },

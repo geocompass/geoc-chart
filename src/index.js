@@ -5,13 +5,13 @@ import { Geoc } from './instances/geoc'
 import { G2Plot } from './instances/g2plot'
 import { Mapbox } from './instances/mapbox'
 
-class GeocChart {
+class Gde {
   static accessToken = null
 
   constructor (elements, chartId) {
     if (!isSupportedBrowser()) throw Error('需支持IE10以上、以及Mapbox所支持的浏览器')
 
-    this._token = GeocChart.accessToken
+    this._token = Gde.accessToken
     this.elements = elements
     this.chartId = chartId
 
@@ -41,4 +41,4 @@ class GeocChart {
 
 }
 
-export default GeocChart
+export default Gde
