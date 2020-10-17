@@ -82,19 +82,19 @@ $ npm link gde
 ## 数据文档
 
 <details>
-  <summary><b>`G2Plot` 使用文档</b></summary>
+  <summary><b>G2Plot 使用文档</b></summary>
 
   [G2Plot](https://g2plot.antv.vision/zh/docs/manual/introduction)
 </details>
 
 <details>
-  <summary><b>`Mapbox` 使用文档</b></summary>
+  <summary><b>Mapbox 使用文档</b></summary>
 
   [Mapbox](https://docs.mapbox.com/mapbox-gl-js/api/)
 </details>
 
 <details>
-  <summary><b>`Geoc` 使用文档</b></summary>
+  <summary><b>Geoc 使用文档</b></summary>
 
   [Geoc](https://github.com/geocompass/geoc-chart/blob/main/doc/GEOC.md)
 </details>
