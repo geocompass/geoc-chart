@@ -1,6 +1,5 @@
 ### TODO
-    - webpack打包出来的包过大
-    - 文档
+    - webpack打包出来的包过大ß
     - 丰富API
 
 ### BUG

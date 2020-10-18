@@ -62,6 +62,24 @@ new Gde('gde-mapbox', '65eec7ab-64e7-4922-97cb-c9962233b967');
 ```
 
 
+## 参数 
+
+属性 | 类型 | 必填 | 说明 | 示例
+---------|----------|---------|---------|---------
+accessToken | String | 是 | 内部服务请求参数`token` | 'xxx-xxx-xxx'
+container | String | 是 | 图表渲染容器`container` | 'gde-geoc_text'
+chartId | String | 是 | 内部服务请求参数`chartId` | '4c2d467e-fc82-4ca1-bc73-fec59242c330'
+
+
+## Tips
+
+- 服务权限`accessToken`。
+- 通过服务`/datavisual/dashbord_info`请求图表`chartId`列表。
+- [Packet size](https://github.com/geocompass/geoc-chart/blob/main/package.json#L27)
+
+
+
+
 ## 测试
 
 ### `geoc-chart`包中
