@@ -9,7 +9,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/geocompass/geoc-chart/blob/main/doc/assets/demo-chart.png" width="800">
+  <img src="./doc/assets/demo-chart.png" width="800">
 </div>
 
 
@@ -36,7 +36,7 @@ $ lib/gde.min.js
 
 ## 使用
 <div align="center">
-    <img src="https://github.com/geocompass/geoc-chart/blob/main/doc/assets/demo-use.png" width="450" />
+    <img src="./doc/assets/demo-use.png" width="450" />
 </div>
 
 <br/>
