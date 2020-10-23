@@ -19,6 +19,7 @@
     "url": "https://github.com/geocompass/geoc-chart/issues"
   },
   "main": "lib/gde.min.js",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "lint": "eslint src/index.js",
     "dev": "webpack --config build/webpack.config.js --mode development",
